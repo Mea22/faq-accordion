@@ -1,0 +1,160 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+    border-radius: 23px;
+    margin: 70px 24px 0px;
+    width: 327px;
+}
+.desktop{
+    display: none;
+}
+.mobile{
+    max-width: 237px;
+}
+.images{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -107px;
+    margin-bottom: 28px;
+}
+.shadow{
+    margin-top: -75px;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px 24px 48px;
+    gap: 18px;
+}
+h1{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #1E1F36;
+    margin-bottom: 40px;
+}
+button{
+    border: 0px;
+    background-color: #FFFFFF;
+    text-align: left;
+
+}
+.collapsible{
+    display: flex;
+    align-items: center;
+    width: 278px;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #4B4C5F;
+}
+.collapsible.active{
+    font-weight: 700;
+}
+.collapsible.active img{
+    transform: rotate(180deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.line{
+    margin-top: 16px;
+    border: 0.5px solid #E8E8EA;
+}
+.content{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #787887;
+    max-width: 260px;
+    margin-top: 13px;
+    margin-left: 5px;
+    text-align: left;
+    display: none;
+}
+.content.active{
+    display: flex;
+}
+@media only screen and (min-width: 870px){
+    main{
+        display: flex;
+        flex-direction: row;
+        margin:  0px 260px;
+        height: 509px;
+        width: auto;
+    }
+    .desktop{
+        display: flex;
+    }
+    .mobile{
+        display: none;
+    }
+    .images{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 75px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 87px;
+        overflow: hidden;
+        
+    }
+    .one{
+        margin-left: -80px;
+        max-width: 472px;
+
+    }
+    .two{
+        position: absolute;
+        margin-top: -380px;
+        margin-left: -570px;
+        overflow: hidden;
+    }
+    .three{
+        margin-left: -93px;
+        margin-top: 205px;
+        position: absolute;
+    }
+    #content{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 65px 111px 0px 0px;
+        gap: 18px;
+    }
+    h1{
+        margin-bottom: 45px;
+    }
+   
+    .collapsible{
+        width: 320px;
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    
+    .collapsible:hover{
+        color: #F47B56;
+    }
+    
+    
+    .p{
+        max-width: 300px;
+    }
+    
+}
